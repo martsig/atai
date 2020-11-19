@@ -26,8 +26,20 @@
 (:durative-action go-to-chest
     :parameters (?p)
     :duration (= ?duration 3)
-    :condition (PERSON ?p)    
-    :effect (and (at-chest ?p))
+    :condition (and 
+        (at start (and 
+        (PERSON ?p)))
+        (over all (and 
+        (PERSON ?p)))
+        (at end (and 
+        (PERSON ?p)))
+    )
+    :effect (and 
+        (at start (and 
+        ))
+        (at end (and 
+        (at-chest ?p)))
+    )
 )
 
 )
