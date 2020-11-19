@@ -1,6 +1,6 @@
 (define (problem make_tools_v1) (:domain make_tools)
 (:objects 
-    alice
+    alice bob
     chest workbench furnace
 )
 
