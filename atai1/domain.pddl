@@ -5,22 +5,37 @@
 ;remove requirements that are not needed
 (:requirements :strips :fluents :durative-actions :timed-initial-literals :typing :conditional-effects :negative-preconditions :duration-inequalities :equality)
 
-;(:types ;todo: enumerate types and their hierarchy here, e.g. car truck bus - vehicle
-;)
+(:types ;todo: enumerate types and their hierarchy here, e.g. car truck bus - vehicle
+    chest workbench furnace - place
+    logs woods sticks iron_ingots iron_sword coal torches iron_shovel gold_ingots gold_axe gold_ore iron_ore - object
+)
 
 ; un-comment following line if constants are needed
 ;(:constants )
 
 (:predicates 
-(LOCATION ?x) (FURNACE ?x) (WORKBENCH ?x) (CHEST ?x)
+(FURNACE ?x) (WORKBENCH ?x) (CHEST ?x)
 (PERSON ?p)
 (at-chest ?p) (at-workbench ?p) (at-furnace ?p)
 (free-workbench ?b) (free-furnace ?p)
+(free-hand ?p)
 )
 
 
-;(:functions ;todo: define numeric functions here
-;)
+(:functions 
+    (logs ?l - place)
+    (woods ?w - place)
+    (sticks ?s - place)
+    (iron_ingots ?iing - place)
+    (iron_sword ?iswo - place)
+    (coal ?c - place)
+    (torches ?t - place)
+    (iron_shovel ?isho - place)
+    (gold_ingots ?gi - place)
+    (gold_axe ?gaxe - place)
+    (gold_ore ?gore - place)
+    (iron_ore ?iore - place)
+)
 
 ; transfers
 
@@ -137,5 +152,17 @@
         (at-workbench ?p)))
     )
 )
+
+; pick & place
+(:action pick
+    :parameters (?p - PERSON ?pl - place ?o - object)
+    :precondition (and 
+    (at start and (
+        
+    ))
+    )
+    :effect (and )
+)
+
 
 )

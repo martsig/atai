@@ -6,12 +6,12 @@
 
 (:init
     (FURNACE furnace) (CHEST chest) (WORKBENCH workbench)
-    (PERSON alice)
-    (at-workbench alice)
+    (PERSON alice) (at-workbench alice) (free-hand alice)
 )
 
 (:goal (and
-    (at-chest alice)
+    (at-furnace alice)
+    
 ))
 
 ;un-comment the following line if metric is needed
