@@ -5,8 +5,8 @@
 )
 
 (:init
-    (FURNACE furnace) (CHEST chest) (WORKBENCH workbench)
-    (PERSON alice) (at-workbench alice) (free-hand alice)
+    (at-location alice workbench)
+    (free-hand alice)
 
     ; time costs of movement
     (= (move-cost chest workbench) 2)
@@ -18,7 +18,7 @@
 )
 
 (:goal (and
-    (at-furnace alice)
+    (at-location alice furnace)
 ))
 
 ;un-comment the following line if metric is needed

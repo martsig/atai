@@ -15,10 +15,6 @@
 ;(:constants )
 
 (:predicates 
-(FURNACE ?x) (WORKBENCH ?x) (CHEST ?x)
-(PERSON ?p)
-(at-chest ?p) (at-workbench ?p) (at-furnace ?p)
-(free-workbench ?b) (free-furnace ?p)
 (free-hand ?p)
 
 ; new predicates
