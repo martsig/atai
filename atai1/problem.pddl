@@ -6,6 +6,7 @@
 
 (:init
     (at-location alice workbench)
+
     (free-hand alice)
 
     ; time costs of movement
