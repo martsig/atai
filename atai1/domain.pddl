@@ -7,7 +7,6 @@
 
 (:types ;todo: enumerate types and their hierarchy here, e.g. car truck bus - vehicle
     chest workbench furnace - location
-    alice bob - person
     logs woods sticks iron_ingots iron_sword coal torches iron_shovel gold_ingots gold_axe gold_ore iron_ore - object
 )
 
