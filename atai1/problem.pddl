@@ -5,8 +5,8 @@
 )
 
 (:init
-    (FURNACE furnace) (CHEST chest) (WORKBENCH workbench)
-    (PERSON alice) (at-workbench alice) (free-hand alice)
+    (at-workbench alice)
+    (free-hand alice)
 
     ; time costs of movement
     (= (move-cost chest workbench) 2)
