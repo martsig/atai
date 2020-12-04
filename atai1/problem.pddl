@@ -73,8 +73,9 @@
 
 
 (:goal (and
+    ;(= (num-location-items chest torch) 1)
     (= (num-location-items chest iron_sword) 1)
     (= (num-location-items chest iron_shovel) 1)
-    (= (num-location-items chest golden_axe) 1)
+    (= (num-location-items chest gold_axe) 1)
 ))
 )

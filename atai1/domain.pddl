@@ -94,8 +94,8 @@
     )
     :effect (and 
         (at start (not (location-free workbench)))
+        (at start (assign (num-location-items workbench log) 0))
         (at end (and 
-        (assign (num-location-items workbench log) 0)
         (assign (num-location-items workbench wood) 4)
         (assign (num-location-items workbench stick) 0)
         (assign (num-location-items workbench iron_ingot) 0)
@@ -134,9 +134,9 @@
     )
     :effect (and 
         (at start (not (location-free workbench)))
+        (at start (assign (num-location-items workbench wood) 0))
         (at end (and 
         (assign (num-location-items workbench log) 0)
-        (assign (num-location-items workbench wood) 0)
         (assign (num-location-items workbench stick) 4)
         (assign (num-location-items workbench iron_ingot) 0)
         (assign (num-location-items workbench iron_sword) 0)
@@ -174,11 +174,11 @@
     )
     :effect (and 
         (at start (not (location-free workbench)))
+        (at start (assign (num-location-items workbench stick) 0))
+        (at start (assign (num-location-items workbench iron_ingot) 0))
         (at end (and 
         (assign (num-location-items workbench log) 0)
         (assign (num-location-items workbench wood) 0)
-        (assign (num-location-items workbench stick) 0)
-        (assign (num-location-items workbench iron_ingot) 0)
         (assign (num-location-items workbench iron_sword) 1)
         (assign (num-location-items workbench coal) 0)
         (assign (num-location-items workbench torch) 0)
@@ -214,13 +214,13 @@
     )
     :effect (and 
         (at start (not (location-free workbench)))
+        (at start (assign (num-location-items workbench stick) 0))
+        (at start (assign (num-location-items workbench coal) 0))
         (at end (and 
         (assign (num-location-items workbench log) 0)
         (assign (num-location-items workbench wood) 0)
-        (assign (num-location-items workbench stick) 0)
         (assign (num-location-items workbench iron_ingot) 0)
         (assign (num-location-items workbench iron_sword) 0)
-        (assign (num-location-items workbench coal) 0)
         (assign (num-location-items workbench torch) 4)
         (assign (num-location-items workbench iron_shovel) 0)
         (assign (num-location-items workbench gold_ingot) 0)
@@ -254,11 +254,11 @@
     )
     :effect (and 
         (at start (not (location-free workbench)))
+        (at start (assign (num-location-items workbench stick) 0))
+        (at start (assign (num-location-items workbench iron_ingot) 0))
         (at end (and 
         (assign (num-location-items workbench log) 0)
         (assign (num-location-items workbench wood) 0)
-        (assign (num-location-items workbench stick) 0)
-        (assign (num-location-items workbench iron_ingot) 0)
         (assign (num-location-items workbench iron_sword) 0)
         (assign (num-location-items workbench coal) 0)
         (assign (num-location-items workbench torch) 0)
@@ -294,16 +294,16 @@
     )
     :effect (and 
         (at start (not (location-free workbench)))
+        (at start (assign (num-location-items workbench stick) 0))
+        (at start (assign (num-location-items workbench gold_ingot) 0))
         (at end (and 
         (assign (num-location-items workbench log) 0)
         (assign (num-location-items workbench wood) 0)
-        (assign (num-location-items workbench stick) 0)
         (assign (num-location-items workbench iron_ingot) 0)
         (assign (num-location-items workbench iron_sword) 0)
         (assign (num-location-items workbench coal) 0)
         (assign (num-location-items workbench torch) 0)
         (assign (num-location-items workbench iron_shovel) 0)
-        (assign (num-location-items workbench gold_ingot) 0)
         (assign (num-location-items workbench gold_axe) 1)
         (assign (num-location-items workbench gold_ore) 0)
         (assign (num-location-items workbench iron_ore) 0)
@@ -334,9 +334,10 @@
     )
     :effect (and 
         (at start (not (location-free furnace)))
+        (at start (assign (num-location-items furnace wood) 0))
+        (at start (assign (num-location-items furnace gold_ore) 0))
         (at end (and 
         (assign (num-location-items furnace log) 0)
-        (assign (num-location-items furnace wood) 0)
         (assign (num-location-items furnace stick) 0)
         (assign (num-location-items furnace iron_ingot) 0)
         (assign (num-location-items furnace iron_sword) 0)
@@ -345,7 +346,6 @@
         (assign (num-location-items furnace iron_shovel) 0)
         (assign (num-location-items furnace gold_ingot) 1)
         (assign (num-location-items furnace gold_axe) 0)
-        (assign (num-location-items furnace gold_ore) 0)
         (assign (num-location-items furnace iron_ore) 0)
         (location-free furnace)
         ))
@@ -374,9 +374,10 @@
     )
     :effect (and 
         (at start (not (location-free furnace)))
+        (at start (assign (num-location-items furnace wood) 0))
+        (at start (assign (num-location-items furnace iron_ore) 0))
         (at end (and 
         (assign (num-location-items furnace log) 0)
-        (assign (num-location-items furnace wood) 0)
         (assign (num-location-items furnace stick) 0)
         (assign (num-location-items furnace iron_ingot) 1)
         (assign (num-location-items furnace iron_sword) 0)
@@ -386,7 +387,6 @@
         (assign (num-location-items furnace gold_ingot) 0)
         (assign (num-location-items furnace gold_axe) 0)
         (assign (num-location-items furnace gold_ore) 0)
-        (assign (num-location-items furnace iron_ore) 0)
         (location-free furnace)
         ))
         )
@@ -414,9 +414,9 @@
     )
     :effect (and 
         (at start (not (location-free furnace)))
-        (at end (and 
-        (assign (num-location-items furnace log) 0)
-        (assign (num-location-items furnace wood) 0)
+        (at start (assign (num-location-items furnace log) 0))
+        (at start (assign (num-location-items furnace wood) 0))
+        (at end (and
         (assign (num-location-items furnace stick) 0)
         (assign (num-location-items furnace iron_ingot) 0)
         (assign (num-location-items furnace iron_sword) 0)
